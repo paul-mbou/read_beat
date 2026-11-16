@@ -1,0 +1,60 @@
+name: read_beat
+description: "ReadBeat — local-first ebook and audio with multi-device resume."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  appwrite: ^25.4.0
+  archive: ^4.0.9
+  audio_session: ^0.2.4
+  collection: ^1.19.1
+  connectivity_plus: ^7.3.1
+  crypto: ^3.0.7
+  drift: ^2.34.3
+  drift_flutter: ^0.3.1
+  equatable: ^2.1.0
+  file_selector: ^1.1.0
+  flutter:
+    sdk: flutter
+  flutter_gutter: ^2.2.0
+  flutter_hooks: ^0.21.3+1
+  flutter_secure_storage: ^10.3.1
+  font_awesome_flutter: ^11.0.0
+  go_router: ^17.5.0
+  google_fonts: ^8.2.1
+  hooks_riverpod: ^3.4.2
+  image: ^4.8.0
+  intl: ^0.20.3
+  just_audio: ^0.10.6
+  logger: ^2.7.0
+  path: ^1.9.1
+  path_provider: ^2.1.6
+  pdfrx: ^2.4.7
+  permission_handler: ^12.0.1
+  receive_sharing_intent: ^1.9.0
+  uuid: ^4.6.0
+  webview_flutter: ^4.14.1
+  xml: ^6.6.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  drift_dev: ^2.34.5
+  build_runner: ^2.16.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/
+
+dependency_overrides:
+  # Riverpod 3 imports package:test at runtime; keep test_api/matcher in sync
+  # with test_core (Flutter SDK pins older versions).
+  test_api: 0.7.13
+  matcher: 0.12.20
+  # drift_dev/analyzer want meta ^1.18.3; flutter_test pins 1.18.0.
+  meta: 1.18.3
