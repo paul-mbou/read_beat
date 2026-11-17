@@ -3,9 +3,14 @@
 **Local-first ebook and audiobook app, with resume across devices.**
 Lecture et audio hors ligne d’abord : la reprise reprend au bon endroit, même après un changement d’appareil.
 
-![ReadBeat](docs/portfolio/cover.png)
+<p>
+  <img src="docs/portfolio/onboarding.png" width="220" alt="ReadBeat onboarding" />
+  <img src="docs/portfolio/home.png" width="220" alt="ReadBeat home" />
+  <img src="docs/portfolio/library.png" width="220" alt="ReadBeat library" />
+  <img src="docs/portfolio/settings.png" width="220" alt="ReadBeat settings" />
+</p>
 
-![ReadBeat mark](store/playstore.png)
+Captured on an Android emulator from the debug build, on a fresh install. The shelf is empty until a file is imported.
 
 ## What it does
 
